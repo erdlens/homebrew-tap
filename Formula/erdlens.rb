@@ -5,21 +5,21 @@
 class Erdlens < Formula
   desc "Interactive, git-friendly ER diagrams for relational databases."
   homepage "https://github.com/erdlens/erdlens"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erdlens/erdlens/releases/download/v0.1.0/erdlens_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d1772683705e885582140896c235687564039af865f889b8f6e51ecb1c18b37d"
+      url "https://github.com/erdlens/erdlens/releases/download/v0.1.1/erdlens_0.1.1_darwin_amd64.tar.gz"
+      sha256 "f44b01aae528ac0b93ad6ee71fa3ad68b3a56f5a268a5c33aaa2eb791cfe701b"
 
       define_method(:install) do
         bin.install "erdlens"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erdlens/erdlens/releases/download/v0.1.0/erdlens_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6b3675adcfc4ddf83a1516c55a65c3586d8c88b33e363474a6572fd34538827e"
+      url "https://github.com/erdlens/erdlens/releases/download/v0.1.1/erdlens_0.1.1_darwin_arm64.tar.gz"
+      sha256 "7b1c09ea38b19c41b3a7e3e5c705963d7fbc1ecd1081dd3f17d188a6decb28b1"
 
       define_method(:install) do
         bin.install "erdlens"
@@ -29,15 +29,15 @@ class Erdlens < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erdlens/erdlens/releases/download/v0.1.0/erdlens_0.1.0_linux_amd64.tar.gz"
-      sha256 "371dbee2852222041ba3b8d87819e544453d60557203478399e5339459c5ae12"
+      url "https://github.com/erdlens/erdlens/releases/download/v0.1.1/erdlens_0.1.1_linux_amd64.tar.gz"
+      sha256 "9c57b2442b2f50d065877ca676e0a56c12a9057feb58d6a2276cf1f9d5d96653"
       define_method(:install) do
         bin.install "erdlens"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erdlens/erdlens/releases/download/v0.1.0/erdlens_0.1.0_linux_arm64.tar.gz"
-      sha256 "5facec7161debb91f04faccb81cd2044ff802609a398b6b5e374868508482390"
+      url "https://github.com/erdlens/erdlens/releases/download/v0.1.1/erdlens_0.1.1_linux_arm64.tar.gz"
+      sha256 "2c6e8e8822c211158fb7d18da251c1a997db738edcf572e1f7afe0e5647dde8c"
       define_method(:install) do
         bin.install "erdlens"
       end
